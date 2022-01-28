@@ -1,0 +1,1266 @@
+:root {
+  --headfont: "Raleway", sans-serif;
+  --aboutfont: "Open Sans", sans-serif;
+  --brand: #744fa0;
+  --hcol: #353535;
+  --pcol: #555555;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.heading {
+  position: relative;
+}
+
+.headingLine {
+  width: 112px;
+  display: flex;
+  position: absolute;
+  top: 40px;
+}
+
+.headingLine1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.headingLine2 {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.headingLine .line {
+  height: 1px;
+  background: #353535;
+}
+
+.headingLine .line1 {
+  width: 44px;
+  margin-bottom: 4px;
+}
+
+.headingLine .line2 {
+  width: 49px;
+}
+
+.headingLine .line3 {
+  width: 44px;
+  margin-bottom: 4px;
+}
+
+.headingLine .line4 {
+  width: 49px;
+}
+
+/* =====================
+    common css ends 
+======================= */
+
+.ttu {
+  text-transform: uppercase;
+}
+
+.ttc {
+  text-transform: capitalize;
+}
+
+.text-w {
+  color: #fff;
+}
+
+.text-c {
+  text-align: center;
+}
+
+.ral-l {
+  font-family: var(--headfont);
+  font-weight: 300;
+}
+
+.ral-r {
+  font-family: var(--headfont);
+  font-weight: 400;
+}
+
+.ral-m {
+  font-family: var(--headfont);
+  font-weight: 500;
+}
+
+.ral-sb {
+  font-family: var(--headfont);
+  font-weight: 600;
+}
+
+.ral-b {
+  font-family: var(--headfont);
+  font-weight: 700;
+}
+
+.open-l {
+  font-family: var(--aboutfont);
+  font-weight: 300;
+}
+
+.open-r {
+  font-family: var(--aboutfont);
+  font-weight: 400;
+}
+
+.open-m {
+  font-family: var(--aboutfont);
+  font-weight: 500;
+}
+
+.open-sb {
+  font-family: var(--aboutfont);
+  font-weight: 600;
+}
+
+.open-b {
+  font-family: var(--aboutfont);
+  font-weight: 700;
+}
+
+/* =====================
+    typography css ends 
+======================= */
+
+nav {
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+}
+
+nav .navbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .navbar .nav-logo {
+  height: 100%;
+  width: 230px;
+  display: flex;
+  align-items: center;
+}
+
+nav .navbar .nav-logo a img {
+  width: 100%;
+}
+
+nav .navbar .nav-list {
+  height: 100%;
+  width: 585px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .navbar .nav-list .list {
+  height: 200px;
+  width: 445px;
+}
+
+nav .navbar .nav-list .list ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .navbar .nav-list .list ul li a {
+  line-height: 200px;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  position: relative;
+}
+
+nav .navbar .nav-list .list ul li a:hover {
+  color: var(--brand);
+}
+
+nav .navbar .nav-list .list ul li a::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  background: var(--brand);
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  transition: all linear 0.4s;
+}
+
+nav .navbar .nav-list .list ul li a:hover:after {
+  width: 15px;
+}
+
+nav .navbar .nav-list .click-btn {
+  height: 200px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .navbar .nav-list .click-btn a {
+  display: inline-block;
+  line-height: 31px;
+  background: var(--brand);
+  padding: 0 20px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+/* =====================
+    navbar css ends 
+======================= */
+
+#bannerBg {
+  background: url(../images/banner.jpg) no-repeat center / cover;
+  height: 700px;
+  position: relative;
+  z-index: 1;
+}
+
+#bannerBg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#bannerBg .banner {
+  height: 100%;
+  position: relative;
+}
+
+#bannerBg .banner .frontImage {
+  width: 650px;
+  position: absolute;
+  top: 185px;
+  left: -95px;
+  z-index: -2;
+}
+#bannerBg .banner .frontImage img {
+  width: 100%;
+}
+
+#bannerBg .banner .bannerText {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#bannerBg .banner .bannerText h1 span {
+  color: var(--brand);
+}
+
+#bannerBg .banner .bannerText h1 {
+  margin-bottom: 12px;
+  margin-top: 234px;
+}
+
+#bannerBg .banner .bannerText p {
+  line-height: 20px;
+  padding-left: 700px;
+  text-align: right;
+  margin-top: 48px;
+  position: relative;
+}
+
+#bannerBg .banner .bannerText p::after {
+  content: "";
+  width: 200px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: -28px;
+  right: 0;
+}
+
+#bannerBg .banner .bannerText .button {
+  width: 388px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+#bannerBg .banner .bannerText .button .btn {
+  display: inline-block;
+  width: 190px;
+  height: 60px;
+  background: #f1f1f1;
+  color: var(--hcol);
+  border-radius: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  position: relative;
+  transition: all linear 0.4s;
+}
+
+#bannerBg .banner .bannerText .button .btn:hover {
+  background: var(--brand);
+  color: #fff;
+}
+
+#bannerBg .banner .bannerText .button .btn i {
+  position: absolute;
+  top: 14px;
+  left: 26px;
+}
+
+#bannerBg .banner .bannerText .button .btn h3 {
+  padding-left: 62px;
+  padding-top: 5px;
+}
+
+#bannerBg .banner .bannerText .button .btn h2 {
+  padding-left: 62px;
+  padding-top: 3px;
+}
+
+/* =====================
+    banner css ends 
+======================= */
+
+#aboutBg {
+  height: 341px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#aboutBg .about {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#aboutBg .about .aboutText {
+  width: 770px;
+  height: 100%;
+}
+
+#aboutBg .about .aboutText .aboutHeading {
+  height: 111px;
+  display: flex;
+  justify-content: center;
+}
+
+#aboutBg .about .aboutText .aboutHeading .heading {
+  margin-top: 50px;
+}
+
+#aboutBg .about .aboutText .aboutContent {
+  height: 230px;
+}
+
+#aboutBg .about .aboutText .aboutContent ul {
+  padding-top: 32px;
+}
+
+#aboutBg .about .aboutText .aboutContent ul li {
+  color: var(--pcol);
+  line-height: 20px;
+  padding: 0 68px;
+}
+
+#aboutBg .about .aboutText .aboutContent ul li:last-child {
+  padding: 27px 68px 0px 68px;
+}
+
+#aboutBg .about .aboutImage {
+  width: 370px;
+  height: 100%;
+}
+
+#aboutBg .about .aboutImage img {
+  width: 100%;
+}
+
+/* =====================
+    about css ends 
+======================= */
+
+#featuresBg {
+  height: 655px;
+  background: #f1f1f1;
+  margin-bottom: 100px;
+}
+
+#featuresBg .features {
+  height: 655px;
+}
+
+#featuresBg .features .featuresHeading {
+  height: 125px;
+  width: 100%;
+}
+
+#featuresBg .features .featuresHeading .heading {
+  padding-top: 55px;
+}
+
+#featuresBg .features .featuresHeading .heading .headingLine {
+  left: 526px;
+  top: 90px;
+}
+
+#featuresBg .features .featuresContent {
+  height: 530px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#featuresBg .features .featuresContent .featuresItem {
+  height: 100%;
+  width: 370px;
+}
+
+#featuresBg .features .featuresContent .featuresItem .phone .phoneItem {
+  width: 100%;
+  height: 104px;
+  position: relative;
+  z-index: 1;
+}
+
+#featuresBg .features .featuresContent .featuresItem .phone .phoneItem i {
+  font-size: 35px;
+  color: var(--hcol);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transition: all linear 0.4s;
+}
+
+#featuresBg .features .featuresContent .featuresItem .phone .phoneItem::after {
+  content: "";
+  width: 270px;
+  height: 1px;
+  background: var(--hcol);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all linear 0.4s;
+  z-index: 5;
+}
+
+#featuresBg .features .featuresContent .featuresItem .phone .phoneItem h6 {
+  color: var(--hcol);
+  padding-top: 26px;
+  padding-left: 50px;
+  transition: all linear 0.4s;
+}
+
+#featuresBg .features .featuresContent .featuresItem .phone .phoneItem p {
+  color: var(--pcol);
+  padding-top: 10px;
+  padding-left: 50px;
+  transition: all linear 0.4s;
+}
+
+#featuresBg .features .featuresContent .featuresItem .phone .phoneItem:hover i,
+#featuresBg .features .featuresContent .featuresItem .phone .phoneItem:hover h6,
+#featuresBg .features .featuresContent .featuresItem .phone .phoneItem:hover p {
+  color: var(--brand);
+}
+
+#featuresBg
+  .features
+  .featuresContent
+  .featuresItem
+  .phone
+  .phoneItem:hover::after {
+  background: var(--brand);
+  width: 370px;
+}
+
+#featuresBg
+  .features
+  .featuresContent
+  .featuresItem
+  .phone
+  .phoneItem:last-child::after {
+  display: none;
+}
+
+#featuresBg .features .featuresContent .featuresItem .image {
+  margin-top: 18px;
+}
+
+#featuresBg .features .featuresContent .featuresItem .global {
+  text-align: right;
+}
+
+#featuresBg .features .featuresContent .featuresItem .global h4 {
+  margin-top: 88px;
+  color: var(--hcol);
+}
+
+#featuresBg .features .featuresContent .featuresItem .global p {
+  color: var(--pcol);
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+/* =====================
+    features css ends 
+======================= */
+
+#screenshotsBg {
+  height: 535px;
+  margin-bottom: 100px;
+}
+
+#screenshotsBg .screenshots {
+  height: 100%;
+}
+
+#screenshotsBg .screenshots .screenHeading {
+  height: 105px;
+}
+
+#screenshotsBg .screenshots .screenHeading .heading .headingLine {
+  left: 522px;
+}
+
+#screenshotsBg .screenshots .screenContent {
+  height: 430px;
+}
+
+#screenshotsBg .screenshots .screenContent image img {
+  width: 100%;
+}
+
+#screenshotsBg .screenshots .screenContent ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#screenshotsBg .screenshots .screenContent ul li a {
+  padding-right: 7px;
+}
+
+#screenshotsBg .screenshots .screenContent ul li a i {
+  color: var(--hcol);
+  transition: all linear 0.4s;
+}
+
+#screenshotsBg .screenshots .screenContent ul li a i:hover {
+  color: var(--brand);
+}
+
+#screenshotsBg .screenshots .screenContent ul li a:last-of-type {
+  margin-right: 0;
+}
+
+/* ==========================
+    screenshots css ends 
+============================ */
+
+#videoHeading {
+  height: 115px;
+}
+
+#videoHeading .videoHeading {
+  height: 100%;
+}
+
+#videoHeading .videoHeading .headingLine {
+  left: 525px;
+}
+
+#videoBg {
+  height: 500px;
+  background: url(../images/watchVideo.jpg) no-repeat center / cover;
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+#videoBg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+#videoBg .video {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ==========================
+    watch video css ends 
+============================ */
+
+#pricingBg {
+  height: 540px;
+  margin-bottom: 100px;
+}
+
+#pricingBg .pricing {
+  height: 100%;
+}
+
+#pricingBg .pricing .pricingHeading {
+  height: 114px;
+}
+
+#pricingBg .pricing .pricingHeading .headingLine {
+  left: 522px;
+}
+
+#pricingBg .pricing .pricingContent {
+  height: 426px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#pricingBg .pricing .pricingContent .pricingItem {
+  height: 100%;
+  width: 270px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border: 1px solid #f1f1f1;
+  box-sizing: border-box;
+}
+
+#pricingBg .pricing .pricingContent .pricingItem .top {
+  width: 100%;
+  height: 60px;
+  background: #f1f1f1;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all linear 0.4s;
+}
+
+#pricingBg .pricing .pricingContent .pricingItem:hover .top {
+  background: var(--brand);
+}
+
+#pricingBg .pricing .pricingContent .pricingItem .top h5 {
+  color: var(--hcol);
+  transition: all linear 0.4s;
+}
+
+#pricingBg .pricing .pricingContent .pricingItem:hover .top h5 {
+  color: #fff;
+}
+
+#pricingBg .pricing .pricingContent .pricingItem .middle {
+  height: 179px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pricingBg .pricing .pricingContent .pricingItem .middle .circle {
+  height: 120px;
+  width: 120px;
+  border: 1px solid #f1f1f1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pricingBg .pricing .pricingContent .pricingItem .middle .circle h4 {
+  margin-top: 15px;
+  color: var(--hcol);
+}
+
+#pricingBg .pricing .pricingContent .pricingItem .middle .circle p {
+  margin-top: -5px;
+  color: var(--pcol);
+}
+
+#pricingBg .pricing .pricingContent .pricingItem .bottom {
+  height: 187px;
+  width: 100%;
+  background: #f1f1f1;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: relative;
+}
+
+#pricingBg .pricing .pricingContent .pricingItem .bottom ul {
+  padding-top: 30px;
+}
+
+#pricingBg .pricing .pricingContent .pricingItem .bottom ul li {
+  margin-bottom: 8px;
+  color: var(--hcol);
+}
+
+#pricingBg .pricing .pricingContent .pricingItem .bottom ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+#pricingBg .pricing .pricingContent .pricingItem .bottom .priceBtn {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+#pricingBg .pricing .pricingContent .pricingItem .bottom .priceBtn a {
+  display: inline-block;
+  line-height: 35px;
+  padding: 0 20px;
+  background: #fff;
+  color: var(--hcol);
+  border: 1px solid var(--hcol);
+  box-sizing: border-box;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all linear 0.4s;
+}
+
+#pricingBg .pricing .pricingContent .pricingItem:hover .bottom .priceBtn a {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+}
+
+/* ==========================
+    pricing plan css ends 
+============================ */
+
+#teamBg {
+  height: 655px;
+  margin-bottom: 100px;
+}
+
+#teamBg .team {
+  height: 100%;
+}
+
+#teamBg .team .teamHeading {
+  height: 112px;
+}
+
+#teamBg .team .teamHeading .headingLine {
+  left: 522px;
+}
+
+#teamBg .team .teamContent {
+  height: 543px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+#teamBg .team .teamContent .teamItem {
+  height: 100%;
+  width: 370px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  position: relative;
+}
+
+#teamBg .team .teamContent .teamItem .teamImage {
+  height: 370px;
+  width: 370px;
+  position: absolute;
+  top: 87px;
+  left: 0;
+  z-index: 3;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+}
+
+#teamBg .team .teamContent .teamItem:hover .teamImage {
+  top: 0;
+}
+
+#teamBg .team .teamContent .teamItem .teamImage img {
+  width: 100%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  transition: all linear 0.4s;
+}
+
+#teamBg .team .teamContent .teamItem:hover .teamImage img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#teamBg .team .teamContent .teamItem .teamImage .overly {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transition: all linear 0.4s;
+}
+
+#teamBg .team .teamContent .teamItem:hover .teamImage .overly {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+#teamBg .team .teamContent .teamItem .teamImage .overly ul {
+  display: flex;
+}
+
+#teamBg .team .teamContent .teamItem .teamImage .overly ul li {
+  margin-right: 10px;
+}
+
+#teamBg .team .teamContent .teamItem .teamImage .overly ul li:last-of-type {
+  margin-right: 0;
+}
+
+#teamBg .team .teamContent .teamItem .teamImage .overly ul li i {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  color: var(--hcol);
+  background: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all linear 0.4s;
+}
+
+#teamBg .team .teamContent .teamItem .teamImage .overly ul li i:hover {
+  background: #1da1f2;
+  color: #fff;
+}
+
+#teamBg .team .teamContent .teamItem .teamText {
+  height: 175px;
+  width: 370px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 87px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: all linear 0.4s;
+  opacity: 0;
+}
+
+#teamBg .team .teamContent .teamItem:hover .teamText {
+  bottom: 0;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
+#teamBg .team .teamContent .teamItem .teamText h4 {
+  padding-top: 25px;
+  padding-bottom: 5px;
+  color: var(--hcol);
+}
+
+#teamBg .team .teamContent .teamItem .teamText h6 {
+  color: var(--hcol);
+}
+
+#teamBg .team .teamContent .teamItem .teamText p {
+  padding: 0 65px;
+  margin-top: 15px;
+  color: var(--pcol);
+}
+
+/* ==========================
+    team  css ends 
+============================ */
+
+#feedbackBg {
+  height: 665px;
+  margin-bottom: 100px;
+}
+
+#feedbackBg .feedbackHeading {
+  height: 115px;
+}
+
+#feedbackBg .feedbackHeading .heading .headingLine {
+  left: 522px;
+}
+
+#feedbackBg .feedbackContent {
+  height: 550px;
+  background: url(../images/feedbackImage.jpg) no-repeat center / cover;
+  z-index: 1;
+  position: relative;
+}
+
+#feedbackBg .feedbackContent::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+#feedbackBg .feedbackContent .feedbackText {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#feedbackBg .feedbackContent .feedbackText .textBox {
+  width: 800px;
+  height: 238px;
+  background: #f1f1f1;
+  margin-top: 45px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+#feedbackBg .feedbackContent .feedbackText .textBox p {
+  line-height: 20px;
+  color: var(--pcol);
+  padding: 25px 70px;
+}
+
+#feedbackBg .feedbackContent .feedbackText .textBox .star i {
+  font-size: 14px;
+  color: var(--brand);
+}
+
+#feedbackBg .feedbackContent .feedbackText .textBox h4 {
+  color: var(--hcol);
+  padding-top: 5px;
+}
+
+#feedbackBg .feedbackContent .feedbackText .textBox p {
+  color: var(--pcol);
+}
+
+#feedbackBg .feedbackContent .feedbackText .textBox .arro {
+  width: 30px;
+  height: 30px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  left: 383px;
+  z-index: -1;
+}
+
+#feedbackBg .feedbackContent .feedbackText .feedbackImage {
+  width: 475px;
+  height: 150px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#feedbackBg .feedbackContent .feedbackText .feedbackImage .imageItem {
+  position: relative;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#feedbackBg .feedbackContent .feedbackText .feedbackImage .item1 .overly {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#feedbackBg .feedbackContent .feedbackText .feedbackImage .big {
+  position: relative;
+}
+
+#feedbackBg .feedbackContent .feedbackText ul {
+  margin-top: 25px;
+}
+
+#feedbackBg .feedbackContent .feedbackText ul li a i {
+  color: var(--brand);
+  font-size: 20px;
+}
+
+/* #feedbackBg .feedbackContent .feedbackText .feedbackImage .big .border {
+  height: 145px;
+  width: 145px;
+  border: 3px solid var(--brand);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+} */
+
+/* ==========================
+    feedback  css ends 
+============================ */
+
+#touchBg {
+  height: 460px;
+  margin-bottom: 100px;
+}
+
+#touchBg .touch {
+  height: 100%;
+}
+
+#touchBg .touch .touchHeading {
+  height: 113px;
+}
+
+#touchBg .touch .touchHeading .headingLine {
+  left: 524px;
+}
+
+#touchBg .touch .touchContent {
+  height: 347px;
+}
+
+#touchBg .touch .touchContent form .fTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#touchBg .touch .touchContent form .fTop input {
+  width: 370px;
+  height: 50px;
+  background: transparent;
+  border-color: var(--hcol);
+  outline: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  text-transform: capitalize;
+  padding-left: 10px;
+  border: 1px solid var(--hcol);
+}
+
+#touchBg .touch .touchContent form .fBottom textarea {
+  width: 1160px;
+  height: 200px;
+  resize: none;
+  background: transparent;
+  border-color: var(--hcol);
+  outline: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  text-transform: capitalize;
+  padding-left: 10px;
+  border: 1px solid var(--hcol);
+}
+
+#touchBg .touch .touchContent form .sendBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#touchBg .touch .touchContent form .sendBtn button {
+  width: 88px;
+  height: 33px;
+  background: var(--brand);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* ==========================
+    get in touch  css ends 
+============================ */
+
+#footerBg {
+  height: 260px;
+  background: var(--hcol);
+}
+
+#footerBg .footer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#footerBg .footer .image {
+  margin-top: 30px;
+}
+
+#footerBg .footer ul {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 27px;
+}
+
+#footerBg .footer ul li {
+  margin-right: 10px;
+}
+
+#footerBg .footer ul li:last-of-type {
+  margin-right: 0;
+}
+
+#footerBg .footer ul li i {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  color: var(--hcol);
+  background: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all linear 0.4s;
+}
+
+#footerBg .footer ul li i:hover {
+  background: #1da1f2;
+  color: #fff;
+}
+
+#footerBg .footer p span {
+  color: var(--brand);
+}
+
+/* ==========================
+    footer  css ends 
+============================ */
